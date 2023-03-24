@@ -16,7 +16,6 @@ public class FakeApiService implements ApiService {
     //La fonction getUsers() retourne la liste d'utilisateurs users
     public List<User> getUsers() {
         // TODO: A modifier
-        // Modifié
         return users;
     }
 
@@ -25,7 +24,8 @@ public class FakeApiService implements ApiService {
      * This user must be get from the {@link FakeApiServiceGenerator#FAKE_USERS_RANDOM} list.
      */
     @Override
-    //La fonction generateRandomUser() va ajouter un utilisateur généré par la fonction User.random de la classe User et l'ajouter à la liste d'utilisateurs users.
+    //La fonction generateRandomUser() va ajouter un utilisateur généré par la fonction User.random
+    //de la classe User et l'ajouter à la liste d'utilisateurs users.
     public void generateRandomUser() {
         // TODO: A modifier
         users.add(User.random());
@@ -35,7 +35,8 @@ public class FakeApiService implements ApiService {
      * Delete a {@link User} from the {@link FakeApiService#users} list.
      */
     @Override
-    //La fonction deleteUser va supprimer un utilisateur (de type User) passé en paramètre de la liste d'utilisateurs users grace à la fonction
+    //La fonction deleteUser va supprimer un utilisateur (de type User) passé en paramètre de la
+    //liste d'utilisateurs users grace à la fonction
     public void deleteUser(User user) {
         // TODO: A modifier
         users.remove(user);
