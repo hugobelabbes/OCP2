@@ -17,7 +17,6 @@ public class UserRepository {
     //liste des utilisateurs de apiService : users
     public List<User> getUsers() {
         // TODO: A modifier
-        //Test
         return apiService.getUsers();
     }
     //La fonction generateRandomUser() appelle la fonction apiService.generateRandomUser(), ce qui
